@@ -2,7 +2,7 @@
 
 ## Software
 * Java 21 (Open JDK)
-* Gradle 8.11.1
+* Gradle 8.13
 
 ### Tools
 * https://www.soapui.org/
@@ -20,7 +20,7 @@ wsdl2java -p autorizacion.ws.sri.gob.ec -d ./webclient -client -impl -ant -exsh 
 
 ## Upgrade Gradle
 ```
-gradle wrapper --gradle-version 8.11.1
+gradle wrapper --gradle-version 8.13
 ```
 
 ## Build
