@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public String getGreeting() {
-        return "Roqui Client SRI";
+        return "RoQui Client SRI";
     }
 
     public static void main(String[] args) throws IOException {

@@ -11,8 +11,7 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit Jupiter for testing.
-    implementation("com.sun.xml.ws:jaxws-rt:4.0.0")
+    implementation("com.sun.xml.ws:jaxws-rt:4.0.3")
     implementation("com.thoughtworks.xstream:xstream:1.4.20")
     // https://mvnrepository.com/artifact/commons-io/commons-io
     implementation("commons-io:commons-io:2.12.0")
@@ -36,5 +35,5 @@ tasks.named<Test>("test") {
 
 tasks.jar {
     // Customize the JAR file name
-    archiveFileName.set("RoquiClientSri-$version.jar")
+    archiveFileName.set("RoQuiClientSri-$version.jar")
 }

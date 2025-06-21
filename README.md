@@ -1,8 +1,8 @@
-# Roqui Client SRI
+# RoQui Client SRI
 
 ## Software
 * Java 21 (Open JDK)
-* Gradle 8.13
+* Gradle 8.14.2
 
 ### Tools
 * https://www.soapui.org/
@@ -20,7 +20,7 @@ wsdl2java -p autorizacion.ws.sri.gob.ec -d ./webclient -client -impl -ant -exsh 
 
 ## Upgrade Gradle
 ```
-gradle wrapper --gradle-version 8.13
+gradle wrapper --gradle-version 8.14.2
 ```
 
 ## Build
@@ -30,7 +30,7 @@ gradle build
 
 ## Publish in local maven repository
 ```
-mvn install:install-file -Dfile=./app/build/libs/RoquiClientSri-1.0.1.jar -DgroupId=dev.joguenco.client -DartifactId=RoquiClientSri -Dversion=1.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=./app/build/libs/RoQuiClientSri-1.0.1.jar -DgroupId=dev.joguenco.client -DartifactId=RoQuiClientSri -Dversion=1.0.1 -Dpackaging=jar
 ```
 
 
