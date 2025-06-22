@@ -14,8 +14,17 @@ import java.net.URL;
 
 public class Check {
 
-    public static AutorizacionEstado execute(final String accessKey) throws MalformedURLException {
-        String wsdlLocation = "https://celcer.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl";
+    /**
+     * Queries the SRI web service for the authorization status of an electronic document.
+     *
+     * @param wsdlLocation the WSDL location of the SRI web service
+     * 1. Test: "https://celcer.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl"
+     * 2. Production: "https://cel.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl"
+     * @param accessKey the access key of the electronic document to check
+     * @return the authorization status of the document
+     * @throws MalformedURLException if the WSDL URL is malformed
+     */
+    public static AutorizacionEstado execute(final String wsdlLocation, final String accessKey) throws MalformedURLException {
 
         AutorizacionComprobantesOfflineService ss = new AutorizacionComprobantesOfflineService(new URL(wsdlLocation), new QName("http://ec.gob.sri.ws.autorizacion", "AutorizacionComprobantesOfflineService"));
         AutorizacionComprobantesOffline port = ss.getAutorizacionComprobantesOfflinePort();

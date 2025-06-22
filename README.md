@@ -30,7 +30,11 @@ gradle build
 
 ## Publish in local maven repository
 ```
-mvn install:install-file -Dfile=./app/build/libs/RoQuiClientSri-1.0.1.jar -DgroupId=dev.joguenco.client -DartifactId=RoQuiClientSri -Dversion=1.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=./app/build/libs/RoQuiClientSri-1.1.0.jar -DgroupId=dev.joguenco.client -DartifactId=RoQuiClientSri -Dversion=1.1.0 -Dpackaging=jar
 ```
+
+## Use
+Execute and result file is in temp operating system folder
+
 
 

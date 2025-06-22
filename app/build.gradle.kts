@@ -23,6 +23,12 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 application {
     // Define the main class for the application.
     mainClass.set("dev.joguenco.Main")
